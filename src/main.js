@@ -6,7 +6,10 @@ import store from './store'
 Vue.config.productionTip = false
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
+import ParticleButtonPlugin from '@/views/components/ButtonPlugin';
 
+// 使用插件
+Vue.use(ParticleButtonPlugin);
 Vue.use(ElementUI);
 new Vue({
   router,
