@@ -20,8 +20,7 @@ export default {
   methods: {
     handleClick() {
       this.messageColor = this.getRandomColor();
-      console.log('111');
-
+      this.$emit('click')
       // 3秒后清除消息
       setTimeout(() => {
         this.message = '';
